@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZCoolKit_Example' do
+  pod 'ZCoolKit', :path => '../'
+
+  target 'ZCoolKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end

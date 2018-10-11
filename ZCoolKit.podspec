@@ -1,43 +1,18 @@
-#
-# Be sure to run `pod lib lint ZCoolKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'ZCoolKit'
-  s.version          = '0.2'
+  s.version          = '0.3'
   s.summary          = 'This is my amazing kit.'
-  s.swift_version    = '4.2'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
   s.homepage         = 'https://github.com/zframeworkdev/ZCoolKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.swift_version    = '4.1'
   s.author           = { 'Zaldy Bughaw' => 'zframeworkdev@gmail.com' }
-  s.source           = { :git => 'https://github.com/zframeworkdev/ZCoolKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.description      = <<-DESC
+    This is a drop-in iOS component that allows apps to force users to upgrade to new versions of an app by checking for the latest version in the AppStore or via a configuration in Firebase.
+                   DESC
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'ZCoolKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ZCoolKit' => ['ZCoolKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # Compatibility & Sources
+  s.platform     = :ios, "8.0"
+  s.license	 = { :type => 'MIT', :file => 'LICENSE' }
+  s.source	 = { :git => 'https://github.com/zframeworkdev/ZCoolKit.git', :tag => s.version.to_s }
+  s.source_files = 'Sources/*.swift'
+  s.requires_arc = true
 end

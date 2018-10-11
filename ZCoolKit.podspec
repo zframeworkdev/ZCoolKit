@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZCoolKit'
-  s.version          = '0.1'
+  s.version          = '0.2'
   s.summary          = 'This is my amazing kit.'
   s.swift_version    = '4.2'
 
